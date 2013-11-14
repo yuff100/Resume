@@ -97,3 +97,103 @@
 >2007/4 -- 2007/5：
 >>Motorola University
 >>>Motorola University ITP/RTP training
+
+===============================================================
+#Fisher Yu
+13918677360 yuff100@[163|hotmail|gmail].com
+>-- 5 years C/C++ experience
+
+>-- 5 years large scale telecommunication product development
+
+>-- 1 year minor team management
+
+![](techtag.png)
+
+##Private Information
+>Gender：male
+
+>Birth：1982/01
+
+##Projects
+>Mavenir Systems：
+>>2013/01 till now：UAG
+>>>Design/Develop/Test/Maintain RTP media module
+
+>>>Lead a team to design/develop/test/maintain MSRP/RTP(including Slowpath and Fastpath) module
+
+>>2009/08 -- 2012/12：RMS
+>>>Design/Develop/Test/Maintain Call Control/SIP/CDR module
+
+>>>Take the responsible of capacity testing
+
+>>2009/03 -- 2011/10：TAS/BSG
+>>>Test/Maintain H248 module
+
+>>>Develop/Test/Maintain SIP module
+
+>>>Design/Develop/Test/Maintain CDR module
+
+>>2008/05 -- 2009/08：IMS
+>>>Develop/Test/Maintain SIP module
+
+>>>Design/Develop/Test/Maintain CDR module
+
+>>>Take the responsible of capacity testing
+
+>Motorola：
+>>2007/10 -- 2008/05：WiMAX Handset application
+>>>Take the responsible of reviewing design/develop document
+
+>>>Design/Develop integrating test cases
+
+>>2007/04 -- 2007/10：OMA PoC Based PTX Server
+>>>Design/Develop the architecture and major function of PTX Server
+
+>>>Design/Develop a testing client
+
+>Motorola (Intern)：
+>>2006/02 -- 2006/08：iDEN Handset application
+>>>Design/Develop/Maintain STRIDE/JScript based automation mobile application testing script
+
+>SDR(Shenzheng) Ltd.：
+>>2005/09 -- 2006/02：SIP Server
+>>>Develop SIP Server which can work for VoIP/IVR/VoiceMail/Conference/...
+
+##Working
+>2008/05 till now:
+>>Mavenir Systems
+>>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead
+
+>2007/04 -- 2008/05:
+>>Motorola (China) Ltd. Nanjing Software Branch
+>>>Software Engineer
+
+>2006/02 -- 2006/08：
+>>Motorola (China) Ltd. Nanjing Software Branch
+>>>Intern Software Engineer
+
+>2005/09 -- 2006/02:
+>>SDR (Shenzheng) Ltd.
+>>>Part-time Software Engineer
+
+##Education
+>2004/09 -- 2007/04:
+>>Nanjing University of Posts and Telecommunications
+>>>Computer Application (in Telecommunication) -- Master
+
+>2000/09 -- 2004/07:
+>>Nanjing Normal University
+>>>Electronic Information Engineering -- Bachelor
+
+##Training
+>2007/11:
+>>ESI & The George Washington University
+>>>Software Testing for Better Project Management
+
+>2007/07：
+>>Motorola University
+>>>Effective Presentations
+
+>2007/4 -- 2007/5：
+>>Motorola University
+>>>Motorola University ITP/RTP training
