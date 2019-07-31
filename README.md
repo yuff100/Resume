@@ -1,11 +1,11 @@
 #俞凡
 13918677360 yuff100@[163|hotmail|gmail].com
 
-> -- 5年C/C++开发经验
+> -- 10年C/C++开发经验
 
-> -- 5年产品级大型通信系统开发经验
+> -- 10年产品级大型通信系统开发经验
 
-> -- 1年小型团队管理经验
+> -- 6年小型团队管理经验
 
 ![](techtag.png)
 
@@ -16,8 +16,8 @@
 
 ##项目经历
 >Mavenir Systems：
->>2013/01至今：UAG
->>>设计/实现/测试/维护RTP媒体模块
+>>2013/01至今：UAG/SBC/WRG
+>>>设计/实现/测试/维护RTP媒体模块、IPSec配置模块、L7路由模块、一致性哈希组件、分布式中间件
 
 >>>带领团队设计/实现/测试/维护MSRP/RTP(包括Slowpath和Fastpath)模块
 
@@ -62,7 +62,7 @@
 ##工作经历
 >2008/05至今:
 >>迈韦尼通讯技术(上海)有限公司
->>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead
+>>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead -- Senior Manager -- Director
 
 >2007/04 -- 2008/05:
 >>摩托罗拉(中国)公司南京软件中心
@@ -101,11 +101,11 @@
 ===============================================================
 #Fisher Yu
 13918677360 yuff100@[163|hotmail|gmail].com
->-- 5 years C/C++ experience
+>-- 10 years C/C++ experience
 
->-- 5 years large scale telecommunication product development
+>-- 10 years large scale telecommunication product development
 
->-- 1 year minor team management
+>-- 6 year minor team management
 
 ![](techtag.png)
 
@@ -116,8 +116,8 @@
 
 ##Projects
 >Mavenir Systems：
->>2013/01 till now：UAG
->>>Design/Develop/Test/Maintain RTP media module
+>>2013/01 till now：UAG/SBC/WRG
+>>>Design/Develop/Test/Maintain RTP media module, IPSec Configuration, L7 Routing module, Consistent Hashing, Distributed Midware
 
 >>>Lead a team to design/develop/test/maintain MSRP/RTP(including Slowpath and Fastpath) module
 
@@ -162,7 +162,7 @@
 ##Working
 >2008/05 till now:
 >>Mavenir Systems
->>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead
+>>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead -- Senior Manager -- Director
 
 >2007/04 -- 2008/05:
 >>Motorola (China) Ltd. Nanjing Software Branch
