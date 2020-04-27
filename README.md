@@ -16,6 +16,9 @@
 
 ##项目经历
 >Mavenir Systems：
+>>2019/09至今：5G NR
+>>>带领团队设计/实现Cloud Native 5G NR CU UP，在VPP上实现PDCP/SDAP功能，Context管理在Slowpath实现
+
 >>2013/01至今：UAG/SBC/WRG
 >>>设计/实现/测试/维护RTP媒体模块、IPSec配置模块、L7路由模块、一致性哈希组件、分布式中间件
 
@@ -116,6 +119,9 @@
 
 ##Projects
 >Mavenir Systems：
+>>2019/09 till now：5G NR
+>>>Lead a team to design/develop Cloud Native 5G NR CU UP. Implement PDCP/SDAP in VPP based fastpath and context management in slowpath
+
 >>2013/01 till now：UAG/SBC/WRG
 >>>Design/Develop/Test/Maintain RTP media module, IPSec Configuration, L7 Routing module, Consistent Hashing, Distributed Midware
 
