@@ -1,4 +1,4 @@
-#俞凡
+# 俞凡
 13918677360 yuff100@[163|hotmail|gmail].com
 
 > -- 10年C/C++开发经验
@@ -9,12 +9,12 @@
 
 ![](techtag.png)
 
-##个人信息
+## 个人信息
 >性别：男
 
 >出生年月：1982年1月
 
-##项目经历
+## 项目经历
 >Mavenir Systems：
 >>2019/09至今：5G NR
 >>>带领团队设计/实现Cloud Native 5G NR CU UP，在VPP上实现PDCP/SDAP功能，Context管理在Slowpath实现
@@ -62,7 +62,7 @@
 >>2005/09 -- 2006/02：SIP Server
 >>>实现可提供VoIP/IVR/VoiceMail等功能的SIP Server
 
-##工作经历
+## 工作经历
 >2008/05至今:
 >>迈韦尼通讯技术(上海)有限公司
 >>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead -- Senior Manager -- Director
@@ -79,7 +79,7 @@
 >>资源世代通信(深圳)公司
 >>>Part-time Software Engineer
 
-##教育经历
+## 教育经历
 >2004/09 -- 2007/04:
 >>南京邮电大学
 >>>计算机应用技术(计算机在通信中的应用) 硕士
@@ -88,7 +88,7 @@
 >>南京师范大学
 >>>电子信息工程 本科
 
-##培训经历
+## 培训经历
 >2007/11:
 >>ESI & The George Washington University
 >>>Software Testing for Better Project Management
@@ -101,8 +101,9 @@
 >>Motorola University
 >>>Motorola University ITP/RTP training
 
+
 ===============================================================
-#Fisher Yu
+# Fisher Yu
 13918677360 yuff100@[163|hotmail|gmail].com
 >-- 10 years C/C++ experience
 
@@ -112,12 +113,12 @@
 
 ![](techtag.png)
 
-##Private Information
+## Private Information
 >Gender：male
 
 >Birth：1982/01
 
-##Projects
+## Projects
 >Mavenir Systems：
 >>2019/09 till now：5G NR
 >>>Lead a team to design/develop Cloud Native 5G NR CU UP. Implement PDCP/SDAP in VPP based fastpath and context management in slowpath
@@ -165,7 +166,7 @@
 >>2005/09 -- 2006/02：SIP Server
 >>>Develop SIP Server which can work for VoIP/IVR/VoiceMail/Conference/...
 
-##Working
+## Working
 >2008/05 till now:
 >>Mavenir Systems
 >>>Software Engineer -- Senior Software Engineer -- Senior Technical Lead -- Senior Manager -- Director
@@ -182,7 +183,7 @@
 >>SDR (Shenzheng) Ltd.
 >>>Part-time Software Engineer
 
-##Education
+## Education
 >2004/09 -- 2007/04:
 >>Nanjing University of Posts and Telecommunications
 >>>Computer Application (in Telecommunication) -- Master
@@ -191,7 +192,7 @@
 >>Nanjing Normal University
 >>>Electronic Information Engineering -- Bachelor
 
-##Training
+## Training
 >2007/11:
 >>ESI & The George Washington University
 >>>Software Testing for Better Project Management
