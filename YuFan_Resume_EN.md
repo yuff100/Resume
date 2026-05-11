@@ -155,8 +155,8 @@ _Bachelor's Degree_ || Electronic Information Engineering
 
 - College English Test Band 6 (CET-6)
 - College English Test Band 4 (CET-4)
-- National Computer Level 3
-- Google Certified: Project Management Fundamentals
+- National Computer Level 3 Certificate
+- Google Certified: Project Management Certificate
 - Coursera Certified: Soft Skills, Communication Skills, Time & Stress Management, Conflict Management
 
 ## Honors
