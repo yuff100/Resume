@@ -166,9 +166,16 @@ def md_to_html(md_text):
             i += 1
             continue
 
-        # "**核心业绩：**" etc - treat as a subtitle inside entry
+        # "**text**" - sub-heading inside entry (not a bullet)
         if stripped.startswith('**') and stripped.endswith('**') and in_entry:
-            entry_bullets.append(stripped.strip('*'))
+            # Flush existing bullets first
+            if entry_bullets:
+                html.append('<ul>')
+                for b in entry_bullets:
+                    html.append(f'<li>{b}</li>')
+                html.append('</ul>')
+                entry_bullets = []
+            html.append(f'<div class="entry-subheading">{stripped.strip("*")}</div>')
             i += 1
             continue
 

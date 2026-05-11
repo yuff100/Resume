@@ -126,6 +126,17 @@ body {
   margin-top: 0.5mm;
 }
 
+/* Sub-headings inside entries (e.g. **云原生平台架构**) */
+.entry-subheading {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 2mm;
+  margin-bottom: 0.5mm;
+  padding-bottom: 0.3mm;
+  border-bottom: 1px solid #ddd;
+}
+
 /* Bullets */
 ul {
   list-style: none;
