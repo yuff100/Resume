@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YuFan_Resume_EN</title>
+<style>
+/* === Resume Unified Template === */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #1a1a1a;
+  background: #f5f5f5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: #fff;
+  padding: 22mm 20mm 18mm 20mm;
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 5mm;
+  padding-bottom: 3mm;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.header .name {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2mm;
+}
+
+.header .contact {
+  font-size: 9.5pt;
+  color: #444;
+  line-height: 1.6;
+}
+
+.header .contact span {
+  display: inline-block;
+}
+
+.header .contact .sep {
+  color: #aaa;
+  padding: 0 4px;
+}
+
+.header .contact-line {
+  line-height: 1.6;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 4mm;
+}
+
+.section-title {
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  padding-bottom: 1mm;
+  margin-bottom: 2.5mm;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Entries */
+.entry {
+  margin-bottom: 2.5mm;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.entry-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+}
+
+.entry-subtitle {
+  font-size: 10pt;
+  font-weight: 500;
+  color: #333;
+}
+
+.entry-date {
+  font-size: 9.5pt;
+  color: #555;
+  white-space: nowrap;
+}
+
+.entry-location {
+  font-size: 9.5pt;
+  color: #555;
+  white-space: nowrap;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5pt;
+  color: #555;
+  margin-bottom: 0.5mm;
+}
+
+.entry-body {
+  margin-top: 0.5mm;
+}
+
+/* Bullets */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 4mm;
+  margin-bottom: 0.3mm;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5mm;
+  color: #666;
+}
+
+/* Section: Summary */
+.summary-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 0;
+}
+
+.summary-item {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  width: 100%;
+  padding-left: 4mm;
+  position: relative;
+}
+
+.summary-item::before {
+  content: "•";
+  position: absolute;
+  left: 0.5mm;
+  color: #666;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1mm 2mm;
+}
+
+.skill-category {
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+
+.skill-category strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Education table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+}
+
+.edu-table td {
+  padding: 0.5mm 1mm;
+}
+
+.edu-table .edu-school {
+  font-weight: 600;
+  width: 35%;
+}
+
+.edu-table .edu-degree {
+  width: 25%;
+}
+
+.edu-table .edu-major {
+  width: 25%;
+}
+
+.edu-table .edu-date {
+  text-align: right;
+  color: #555;
+  width: 15%;
+}
+
+/* Certs */
+.cert-list {
+  font-size: 9.5pt;
+  line-height: 1.6;
+}
+
+/* Skills definition list */
+.skills-dl {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1mm 3mm;
+}
+
+.skills-dl dt {
+  font-weight: 600;
+  font-size: 9.5pt;
+  color: #1a1a1a;
+}
+
+.skills-dl dd {
+  margin: 0;
+  font-size: 9.5pt;
+  color: #555;
+  text-align: justify;
+}
+
+/* Print */
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; margin: 0; padding: 22mm 20mm; width: auto; }
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .page { width: 100%; padding: 15mm 12mm; }
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<div class="header"><div class="name">YU FAN</div>
+<div class="contact">
+<div class="contact-line">Male | Age 44 | +86 13918677360 | yuff100@163.com</div>
+<div class="contact-line">19 Years of Experience | Technical Director | Preferred Location: Shanghai</div>
+</div></div>
+<div class="section" id="summary">
+<div class="section-title">Summary</div>
+<ul>
+<li>Open to work location; business travel acceptable</li>
+<li>20 years of high-availability, high-performance backend R&D</li>
+<li>10+ years managing teams of 30+ engineers</li>
+<li>4 years of overseas work experience</li>
+<li>Tech stack: C / C++ / Go / Python</li>
+<li>Server-side architect, DevOps architect, innovation prototyping</li>
+<li>Carrier core network, 4G/5G RAN, NPN private network solutions</li>
+<li>VPP/DPDK high-performance media server architecture</li>
+<li>Cloud-native architecture, CI/CD</li>
+<li>Entrepreneurial mindset for business growth and team building</li>
+<li>VIA Strengths: Teamwork, Multi-perspective, Fairness, Humility, Excellence</li>
+<li>MBTI: ENFJ (Extraversion, Intuition, Feeling, Judging)</li>
+<li>Personal website: www.deepnomind.com</li>
+<li>InfoQ Featured Creator – 2021 & 2022</li>
+</ul>
+<div class="section" id="work">
+<div class="section-title">Work</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Mavenir Systems</div><div class="entry-date">May 2008 - Present</div></div>
+<div class="entry-subtitle">R&D Director</div>
+<ul>
+<li>Team building, performance management, project planning, and architecture design</li>
+<li>R&D of IMS core network elements: P-CSCF, IBCF, ATCF, E-CSCF, I-CSCF, S-CSCF, TAS (Linux / C / C++)</li>
+<li>Media gateway middleware for WebRTC, SBC, VoLTE/VoWiFi (Linux / C / C++ / DPDK / VPP)</li>
+<li>Layer-7 load balancing architecture supporting NFV evolution</li>
+<li>4G/5G RAN CU design and implementation; led cloud-native architecture evolution (Linux / C / Go)</li>
+<li>Built CI/CD team, defined processes, automated test and deployment scripts (Python / Jenkins)</li>
+<li>Built 4G/5G RAN architect team; managed NPN private network automated deployment</li>
+<li>Innovation prototyping: RAN DU uBPF integration, AI real-time voice translation</li>
+<li>Completed 5G CUUP microservice transformation; separated 4G CU control plane and user plane</li>
+<li>Built RU PnP OAM microservice supporting 8,000+ RUs dynamic onboarding</li>
+<li>Introduced VPP/DPDK for user-plane acceleration (SBC, 4G/5G CUUP)</li>
+<li>Planned 10+ CI/CD pipelines for multiple R&D and QA teams</li>
+<li>Built proprietary automated testing framework for 4G CU, 5G CUUP, SDaaS, IMS, SBC</li>
+<li>Built AI real-time voice translation server on UAG platform (cloud + on-device inference; deployed to T-Mobile US)</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Motorola</div><div class="entry-date">May 2007 - May 2008</div></div>
+<div class="entry-subtitle">Software Engineer</div>
+<ul>
+<li>Developed iDEN handset applications</li>
+<li>Developed automated test scripts based on STRIDE</li>
+<li>Developed PoC (Push-to-talk over Cellular) application server</li>
+<li>Designed and implemented PTT server</li>
+<li>Designed test cases for multiple handset features</li>
+</ul>
+</div>
+<div class="section" id="projects">
+<div class="section-title">Projects</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">AI Voice Application Service</div><div class="entry-date">Jul 2025 - Present</div></div>
+<div class="entry-subtitle">Architect</div>
+<ul>
+<li>Designed real-time voice translation service architecture integrated with carrier IMS core network</li>
+<li>Led 5-person team through technology selection, prototype design, and architecture delivery</li>
+<li>Optimized voice data transmission with BPF technology; end-to-end latency under 200ms</li>
+<li>Dual-mode architecture: cloud inference + on-device inference</li>
+<li>99.99% system availability supporting millions of concurrent users</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Radio Access Network</div><div class="entry-date">Oct 2019 - Jun 2025</div></div>
+<div class="entry-subtitle">Group Director</div>
+<ul>
+<li>Led 4G/5G base station R&D with cloud-native architecture implementation</li>
+<li>Led infrastructure setup and business requirement translation to technical solutions</li>
+<li>Monitored project progress ensuring on-time delivery</li>
+<li>Regularly assessed and optimized system architecture</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Private Wireless Network Solution (NPN)</div><div class="entry-date">Apr 2022 - Dec 2022</div></div>
+<div class="entry-subtitle">R&D Director</div>
+<ul>
+<li>Led NPN project R&D; drove automated deployment solutions</li>
+<li>Integrated O-RAN/5GC with IMS core network</li>
+<li>Managed Web GUI development and monitoring system design</li>
+<li>Achieved minute-level IMS core network deployment in private networks</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Unified Access Gateway (UAG)</div><div class="entry-date">Jan 2013 - Oct 2019</div></div>
+<div class="entry-subtitle">R&D Manager</div>
+<ul>
+<li>Led 12-person team in media server R&D</li>
+<li>Developed RTP, MSRP, IPSec, H.248 protocols</li>
+<li>Optimized media server performance with DPDK/VPP</li>
+<li>Customers: T-Mobile, DTAG, Reliance, Tele2, AMX and other major global carriers</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">IMS Core Network</div><div class="entry-date">May 2008 - Jan 2013</div></div>
+<div class="entry-subtitle">Technical Lead</div>
+<ul>
+<li>R&D for I-CSCF, S-CSCF, IP-SM-GW, RCS, SMSC, MMSC</li>
+<li>Designed and developed SIP, CDR, Call Control modules</li>
+<li>Addressed signaling storms and data transmission latency under high concurrency</li>
+<li>Customers: T-Mobile, DTAG, Vietnam Telecom; serving hundreds of millions of users</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Motorola Handsets</div><div class="entry-date">Apr 2007 - May 2008</div></div>
+<div class="entry-subtitle">Software Engineer</div>
+<ul>
+<li>Developed iDEN handset voice communication applications</li>
+<li>Built automated testing framework based on STRIDE</li>
+<li>Optimized PoC cluster voice transmission protocol and scheduling algorithms</li>
+</ul>
+</div>
+<div class="section" id="skills">
+<div class="section-title">Skills</div>
+<dl class="skills-dl">
+<dt>C / C++</dt>
+<dd>10+ years in telecom system development, high-performance backend and core networks</dd>
+<dt>Go / Python / Java</dt>
+<dd>Cloud-native services and toolchain development</dd>
+<dt>Linux</dt>
+<dd>Kernel performance tuning and BPF technology</dd>
+<dt>DPDK / VPP</dt>
+<dd>High-performance data plane acceleration</dd>
+<dt>IMS Core / VoLTE / VoWiFi / WebRTC / SBC</dt>
+<dd>Full-stack core network elements and voice/data transport</dd>
+<dt>CI/CD / Jenkins / Microservices / Cloud-Native</dt>
+<dd>DevOps and engineering efficiency</dd>
+<dt>BPF / uBPF / O-RAN / 5GC / UAG / NPN</dt>
+<dd>Innovation prototyping and architecture delivery</dd>
+</dl>
+<div class="section" id="education">
+<div class="section-title">Education</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Nanjing University of Posts and Telecommunications</div><div class="entry-date">2004 - 2007</div></div>
+<div class="entry-meta"><div class="entry-subtitle">Master's Degree</div><div class="entry-location">Computer Application Technology</div></div>
+<ul>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Nanjing Normal University</div><div class="entry-date">2000 - 2004</div></div>
+<div class="entry-meta"><div class="entry-subtitle">Bachelor's Degree</div><div class="entry-location">Electronic Information Engineering</div></div>
+<ul>
+</ul>
+</div>
+<div class="section" id="certificates">
+<div class="section-title">Certificates</div>
+<ul>
+<li>College English Test Band 6 (CET-6)</li>
+<li>College English Test Band 4 (CET-4)</li>
+<li>National Computer Level 3</li>
+<li>Google Certified: Project Management Fundamentals</li>
+<li>Coursera Certified: Soft Skills, Communication Skills, Time & Stress Management, Conflict Management</li>
+</ul>
+<div class="section" id="honors">
+<div class="section-title">Honors</div>
+<ul>
+<li>InfoQ Featured Creator – 2021 & 2022</li>
+<li>Personal website: www.deepnomind.com</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

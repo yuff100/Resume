@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>俞凡简历_技术专家</title>
+<style>
+/* === Resume Unified Template === */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #1a1a1a;
+  background: #f5f5f5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: #fff;
+  padding: 22mm 20mm 18mm 20mm;
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 5mm;
+  padding-bottom: 3mm;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.header .name {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2mm;
+}
+
+.header .contact {
+  font-size: 9.5pt;
+  color: #444;
+  line-height: 1.6;
+}
+
+.header .contact span {
+  display: inline-block;
+}
+
+.header .contact .sep {
+  color: #aaa;
+  padding: 0 4px;
+}
+
+.header .contact-line {
+  line-height: 1.6;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 4mm;
+}
+
+.section-title {
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  padding-bottom: 1mm;
+  margin-bottom: 2.5mm;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Entries */
+.entry {
+  margin-bottom: 2.5mm;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.entry-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+}
+
+.entry-subtitle {
+  font-size: 10pt;
+  font-weight: 500;
+  color: #333;
+}
+
+.entry-date {
+  font-size: 9.5pt;
+  color: #555;
+  white-space: nowrap;
+}
+
+.entry-location {
+  font-size: 9.5pt;
+  color: #555;
+  white-space: nowrap;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5pt;
+  color: #555;
+  margin-bottom: 0.5mm;
+}
+
+.entry-body {
+  margin-top: 0.5mm;
+}
+
+/* Bullets */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 4mm;
+  margin-bottom: 0.3mm;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5mm;
+  color: #666;
+}
+
+/* Section: Summary */
+.summary-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 0;
+}
+
+.summary-item {
+  font-size: 9.5pt;
+  line-height: 1.5;
+  width: 100%;
+  padding-left: 4mm;
+  position: relative;
+}
+
+.summary-item::before {
+  content: "•";
+  position: absolute;
+  left: 0.5mm;
+  color: #666;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1mm 2mm;
+}
+
+.skill-category {
+  font-size: 9.5pt;
+  line-height: 1.5;
+}
+
+.skill-category strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Education table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+}
+
+.edu-table td {
+  padding: 0.5mm 1mm;
+}
+
+.edu-table .edu-school {
+  font-weight: 600;
+  width: 35%;
+}
+
+.edu-table .edu-degree {
+  width: 25%;
+}
+
+.edu-table .edu-major {
+  width: 25%;
+}
+
+.edu-table .edu-date {
+  text-align: right;
+  color: #555;
+  width: 15%;
+}
+
+/* Certs */
+.cert-list {
+  font-size: 9.5pt;
+  line-height: 1.6;
+}
+
+/* Skills definition list */
+.skills-dl {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1mm 3mm;
+}
+
+.skills-dl dt {
+  font-weight: 600;
+  font-size: 9.5pt;
+  color: #1a1a1a;
+}
+
+.skills-dl dd {
+  margin: 0;
+  font-size: 9.5pt;
+  color: #555;
+  text-align: justify;
+}
+
+/* Print */
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; margin: 0; padding: 22mm 20mm; width: auto; }
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .page { width: 100%; padding: 15mm 12mm; }
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<div class="header"><div class="name">俞凡</div>
+<div class="contact">
+<div class="contact-line">男 | 44岁 | 13918677360 | yuff100@163.com</div>
+<div class="contact-line">意向岗位：技术专家 | 意向城市：上海 | 期望薪资：20-50k | 求职类型：社招</div>
+</div></div>
+<div class="section" id="summary">
+<div class="section-title">Summary</div>
+<ul>
+<li>20年高可用高性能后端研发经验，深耕IMS核心网、数据语音传输领域</li>
+<li>10年以上技术团队指导经验，4年海外工作经历，具备全球化技术落地与跨团队协作能力</li>
+<li>精通C/C++/Go/Python技术栈，擅长BPF/uBPF技术应用、系统性能深度优化与问题攻坚</li>
+<li>资深服务端架构师、DevOps架构师，专注创新技术预研、核心架构设计与商业落地</li>
+<li>VIA性格优势：团队精神、多维视角、公平、谦逊</li>
+<li>16型人格ENFJ，擅长技术方案沟通与落地</li>
+</ul>
+<div class="section" id="work">
+<div class="section-title">Work</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Mavenir Systems</div><div class="entry-date">2008.5 - 至今</div></div>
+<div class="entry-subtitle">研发总监 / 技术专家</div>
+<ul>
+<li>兼具技术架构设计与团队技术指导能力，负责IMS核心网核心技术方案设计与性能优化</li>
+<li>核心主导IMS核心网全系列网元研发：PCSCF、IBCF、ATCF、ECSCF、ICSCF、SCSCF、TAS等</li>
+<li>牵头媒体网关中间件核心技术研发，支撑WebRTC、SBC及VoLTE/VoWIFI等数据语音传输方案</li>
+<li>负责7层负载均衡架构技术设计，支撑IMS核心网NFV演进</li>
+<li>主导CI/CD体系技术搭建，赋能IMS/SBC等核心产品研发效能提升</li>
+<li>完成RAN DU uBPF集成优化、AI实时语音翻译核心技术落地</li>
+<li>技术栈：Linux/C/C++/Go/Python/Java/DPDK/VPP/Jenkins</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Motorola</div><div class="entry-date">2007.5 - 2008.5</div></div>
+<div class="entry-subtitle">软件工程师</div>
+<ul>
+<li>负责iDEN手机应用研发，聚焦数据语音传输功能技术实现与端侧性能优化</li>
+<li>基于STRIDE开发手机自动化测试脚本，保障语音通信端到端稳定性</li>
+<li>负责PoC集群语音应用服务器核心技术开发，优化集群语音传输协议与调度算法</li>
+</ul>
+</div>
+<div class="section" id="projects">
+<div class="section-title">Projects</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">AI语音应用服务</div><div class="entry-date">2025.7 - 至今</div></div>
+<div class="entry-subtitle">架构师 / 技术专家</div>
+<ul>
+<li>作为核心技术专家负责实时语音翻译应用服务核心架构设计，与IMS核心网无缝集成</li>
+<li>带领5人技术团队完成技术选型、原型验证与架构落地</li>
+<li>基于BPF技术优化语音数据传输链路，端到端延迟控制在200ms内</li>
+<li>设计云推理+本地推理双模式架构，系统可用性达99.99%</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">私有无线网解决方案（NPN）</div><div class="entry-date">2022.4 - 2022.12</div></div>
+<div class="entry-subtitle">技术专家</div>
+<ul>
+<li>核心主导NPN私网解决方案研发，聚焦私网环境下IMS核心网适配与数据语音传输性能优化</li>
+<li>推动自动化部署解决方案研发，实现私网IMS核心网分钟级部署</li>
+<li>完成ORAN/5GC与IMS核心网深度集成优化</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">统一接入网关（UAG）</div><div class="entry-date">2013.1 - 2019.10</div></div>
+<div class="entry-subtitle">技术专家 / 研发经理</div>
+<ul>
+<li>带领12人团队研发高性能媒体服务器</li>
+<li>精通RTP、MSRP、IPSec、H248等数据语音传输协议开发</li>
+<li>基于DPDK/VPP技术优化媒体服务器性能，支撑高清语音通信</li>
+<li>产品服务T-Mobile、DTAG、Reliance等欧美主流运营商</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">IMS核心网</div><div class="entry-date">2008.5 - 2013.1</div></div>
+<div class="entry-subtitle">技术专家 / 技术Lead</div>
+<ul>
+<li>参与IMS核心网全系列产品研发：ICSCF、SCSCF、IP-SM-GW、RCS等</li>
+<li>主导SIP、CDR、CallControl等核心模块技术设计开发</li>
+<li>攻坚高并发场景下信令风暴、数据传输延迟等行业技术问题</li>
+<li>产品服务T-Mobile、DTAG、越南电信等全球运营商，支撑亿级用户通信需求</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">Motorola手机通信项目</div><div class="entry-date">2007.4 - 2008.4</div></div>
+<div class="entry-subtitle">软件工程师</div>
+<ul>
+<li>负责iDEN手机语音通信应用研发，优化端侧语音数据采集、编码与传输性能</li>
+<li>基于STRIDE搭建自动化测试框架</li>
+</ul>
+</div>
+<div class="section" id="skills">
+<div class="section-title">Skills</div>
+<dl class="skills-dl">
+<dt>C/C++</dt>
+<dd>精通，十年以上通信系统开发经验</dd>
+<dt>Go / Python / Java</dt>
+<dd>精通，用于云原生服务和工具链开发</dd>
+<dt>Linux</dt>
+<dd>精通，内核性能调优与BPF技术应用</dd>
+<dt>DPDK / VPP</dt>
+<dd>精通，高性能数据面加速</dd>
+<dt>IMS核心网 / VoLTE / VoWiFi / WebRTC / SBC</dt>
+<dd>核心网全系列网元与数据语音传输</dd>
+<dt>CI/CD / Jenkins / 微服务架构 / 云原生</dt>
+<dd>DevOps体系搭建</dd>
+<dt>AI语音翻译 / BPF/uBPF / ORAN/5GC / UAG / NPN / PnP OAM</dt>
+<dd>创新技术预研与落地</dd>
+</dl>
+<div class="section" id="education">
+<div class="section-title">Education</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">南京邮电大学</div><div class="entry-date">2004.1 - 2007.1</div></div>
+<div class="entry-meta"><div class="entry-subtitle">硕士</div><div class="entry-location">计算机应用技术</div></div>
+<ul>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><div class="entry-title">南京师范大学</div><div class="entry-date">2000.1 - 2004.1</div></div>
+<div class="entry-meta"><div class="entry-subtitle">本科</div><div class="entry-location">电子信息工程</div></div>
+<ul>
+</ul>
+</div>
+<div class="section" id="certificates">
+<div class="section-title">Certificates</div>
+<ul>
+<li>大学英语六级、大学英语四级</li>
+<li>计算机三级</li>
+<li>Google认证-项目管理基础</li>
+<li>Coursera认证：软技能、沟通技巧、时间与压力管理、冲突管理</li>
+</ul>
+<div class="section" id="honors">
+<div class="section-title">Honors</div>
+<ul>
+<li>InfoQ 2021、2022年度优质创作者</li>
+<li>个人官网：www.deepnomind.com</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
