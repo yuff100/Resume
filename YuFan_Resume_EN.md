@@ -1,5 +1,4 @@
 ---
-title: Yu Fan Resume
 style:
   font-family: "Segoe UI, Helvetica Neue, Arial, sans-serif"
   name-size: 22pt
@@ -7,6 +6,8 @@ style:
   section-title-border: 1.5px solid currentColor
   font-size: 10.5pt
   line-height: 1.4
+extra:
+  title: Yu Fan Resume
 ---
 
 # YU FAN
@@ -158,6 +159,8 @@ _Bachelor's Degree_ || Electronic Information Engineering
 - National Computer Level 3 Certificate
 - Google Certified: Project Management Certificate
 - DeepLearning.AI: AI For Everyone
+- Google Certified: AI Certificate
+- IBM Certified: AI Certificate
 - Coursera Certified: Soft Skills, Communication Skills, Time & Stress Management, Conflict Management
 
 ## Honors
