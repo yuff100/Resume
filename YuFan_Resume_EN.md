@@ -36,7 +36,9 @@ Male | Age 44 | +86 13918677360 | yuff100@163.com
 
 ### Mavenir Systems || May 2008 - Present
 
-_R&D Director_
+_R&D Group Director_
+
+_Promotion: Software Engineer (2008) → Senior Software Engineer (2009) → Lead Software Engineer (2011) → R&D Manager (2014) → R&D Director (2017) → R&D Group Director (2020)_
 
 - Team building, performance management, project planning, and architecture design
 - R&D of IMS core network elements: P-CSCF, IBCF, ATCF, E-CSCF, I-CSCF, S-CSCF, TAS (Linux / C / C++)
